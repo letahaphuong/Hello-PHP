@@ -10,6 +10,7 @@ $a = "hello";
     <title>Document</title>
 </head>
 <body>
+<h1>Herllo moi nguoiw </h1>
     <?php echo $a . " " . "work4ld"; ?>
 </body>
 </html>
