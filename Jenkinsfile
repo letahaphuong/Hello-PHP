@@ -3,7 +3,7 @@ pipeline {
         stages {
             stage('Clone') {
                 steps {
-                    git branch: 'main', url: 'https://github.com/letahaphuong/Hello-PHP.git'
+                    git 'https://github.com/letahaphuong/Hello-PHP.git'
                 }
             }
         }
