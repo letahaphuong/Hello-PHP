@@ -6,6 +6,16 @@ pipeline {
               git 'https://github.com/letahaphuong/Hello-PHP.git'
            }
        }
+       stage('Test'){
+                    steps {
+                     sh(script: 'dotnet test -l:trx || true')
+                    }
+                }
+       stage('Deploy') {
+                    steps {
+                        sh 'make publish'
+                    }
+                }
 
     }
     post {
