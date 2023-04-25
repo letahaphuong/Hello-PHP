@@ -1,11 +1,6 @@
 pipeline {
     agent any
        stages {
-       stage ('Git Checkout') {
-         steps {
-             git branch: 'main', url: 'https://<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>@https://github.com/letahaphuong/Hello-PHP.git'
-            }
-         }
        stage('Clone') {
            steps {
               git 'https://github.com/letahaphuong/Hello-PHP.git'
