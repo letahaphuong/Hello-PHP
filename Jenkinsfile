@@ -21,7 +21,7 @@ pipeline {
     post {
             always {
 
-                mail bcc: '', body: 'Hello World!!', cc: '', from: '', replyTo: '', subject: 'Hello World!!', to: 'letahaphuong@gmail.com'
+                mail bcc: '', body: 'Hello Jenkins Pipeline!!', cc: '', from: '', replyTo: '', subject: 'Hello World!!', to: 'letahaphuong@gmail.com'
             }
            }
 }
